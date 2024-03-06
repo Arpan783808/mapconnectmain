@@ -6,6 +6,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import Desktop from "./pages/Desktop";
+import MacBookPro14 from "./pages/MacBookPro14";
 import Desktop1 from "./pages/Desktop1";
 import Login from "./pages/Login";
 import AfterLogin from "./pages/AfterLogin";
@@ -27,6 +28,10 @@ function App() {
 
     switch (pathname) {
       case "/":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/macbook-pro-14-1":
         title = "";
         metaDescription = "";
         break;
@@ -61,6 +66,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Desktop />} />
+      <Route path="/macbook-pro-14-1" element={<MacBookPro14 />} />
       <Route path="/desktop-1" element={<Desktop1 />} />
       <Route path="/login" element={<Login />} />
       <Route path="/after-login" element={<AfterLogin />} />

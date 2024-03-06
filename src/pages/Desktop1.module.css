@@ -11,13 +11,9 @@
   width: 56px;
   margin-top: 7px;
 }
-.frame,
-.frame1,
-.frame2 {
+.frame {
   position: absolute;
   top: 45px;
-}
-.frame {
   left: 25px;
   width: 239px;
   height: 62px;
@@ -30,11 +26,13 @@
 }
 .frame1,
 .frame2 {
-  left: 1169px;
+  position: absolute;
+  top: 42px;
+  left: 1020px;
   cursor: pointer;
 }
 .frame2 {
-  left: 1274px;
+  left: 1124px;
 }
 .mapconnectMaps {
   margin: 0;
@@ -52,7 +50,6 @@
   top: 169px;
   left: 361px;
   font-family: var(--font-jomhuria);
-  text-align: center;
   font-size: 140px;
 }
 .desktop1Child,
@@ -66,13 +63,13 @@
   background-color: var(--color-gray-100);
   border: 10px solid var(--color-snow);
   box-sizing: border-box;
-  width: 1351px;
+  width: 1170px;
   height: 505px;
 }
 .desktop1Item {
   top: 457px;
   left: 748px;
-  width: 622px;
+  width: 453px;
   height: 460px;
   object-fit: cover;
 }
@@ -123,7 +120,7 @@
   top: 62px;
   left: 737px;
   border-radius: 30px;
-  width: 707px;
+  width: 524px;
   height: 463px;
   object-fit: cover;
 }
@@ -156,24 +153,30 @@
   align-items: flex-end;
   justify-content: center;
 }
+.integrateYourBuyerOrSeller {
+  margin-block-start: 0;
+  margin-block-end: 40px;
+}
 .andExperienceSeamless {
   line-height: 140%;
   text-transform: lowercase;
   color: var(--color-gray-100);
 }
 .andExperienceSeamlessPerfor {
+  margin: 0;
   font-size: var(--font-size-16xl);
 }
 .integrateYourBuyerContainer {
-  width: 1038px;
+  width: 1226px;
   position: relative;
   display: inline-block;
 }
 .frame6 {
   position: absolute;
   top: 955px;
-  left: 0;
-  width: 1310px;
+  left: 36px;
+  width: 1226px;
+  height: 202px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -202,19 +205,21 @@
   width: 4px;
   height: 244px;
 }
-.ellipseIcon,
-.mapconnect1 {
+.ellipseIcon {
   position: absolute;
   top: 55.4px;
-}
-.ellipseIcon {
   left: 86.6px;
   border-radius: 50%;
   width: 62px;
   height: 62px;
   object-fit: cover;
 }
+.apconnect {
+  font-size: var(--font-size-16xl);
+}
 .mapconnect1 {
+  position: absolute;
+  top: 55.4px;
   left: 183.6px;
 }
 .aboutUsFaqContainer {
@@ -244,15 +249,15 @@
 .frame3 {
   top: 1071px;
   left: -1px;
-  width: 1475.1px;
-  height: 2229.8px;
+  width: 1281px;
+  height: 2230px;
   color: #cec8c8;
 }
 .desktop1 {
   width: 100%;
   position: relative;
   background-color: var(--color-white);
-  height: 3296px;
+  height: 3301px;
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-16xl);

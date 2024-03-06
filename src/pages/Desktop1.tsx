@@ -90,20 +90,24 @@ const Desktop1: FunctionComponent = () => {
         </div>
         <div className={styles.frame6}>
           <div className={styles.integrateYourBuyerContainer}>
-            <span>
-              <span>INTEGRATE YOUR BUYER OR SELLER APP</span>
-            </span>
-            <span className={styles.andExperienceSeamlessPerfor}>
-              <span>{` `}</span>
-              <span className={styles.andExperienceSeamless}>
-                AND EXPERIENCE SEAMLESS PERFORMANCE
-              </span>
+            <p className={styles.integrateYourBuyerOrSeller}>
               <span>
-                {" "}
-                helping you to get shortest motorable distances between two
-                locations
+                <span>INTEGRATE YOUR BUYER OR SELLER APP</span>
               </span>
-            </span>
+            </p>
+            <p className={styles.andExperienceSeamlessPerfor}>
+              <span>
+                <span>{` `}</span>
+                <span className={styles.andExperienceSeamless}>
+                  AND EXPERIENCE SEAMLESS PERFORMANCE
+                </span>
+                <span>
+                  {" "}
+                  helping you to get shortest motorable distances between two
+                  locations
+                </span>
+              </span>
+            </p>
           </div>
         </div>
         <div className={styles.rectangleParent}>
@@ -112,9 +116,7 @@ const Desktop1: FunctionComponent = () => {
           <img className={styles.ellipseIcon} alt="" src="/ellipse-5@2x.png" />
           <div className={styles.mapconnect1}>
             <span>M</span>
-            <span className={styles.andExperienceSeamlessPerfor}>
-              APCONNECT
-            </span>
+            <span className={styles.apconnect}>APCONNECT</span>
           </div>
           <div className={styles.aboutUsFaqContainer}>
             <p className={styles.mapconnectMaps}>About us</p>
