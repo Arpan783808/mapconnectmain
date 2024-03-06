@@ -1,4 +1,4 @@
-import { FunctionComponent, useCallback } from "react";
+import { FunctionComponent, useCallback, useEffect } from "react";
 import {
   Button,
   TextField,
@@ -15,6 +15,36 @@ const Desktop: FunctionComponent = () => {
   const onFrameButtonClick = useCallback(() => {
     navigate("/desktop-1");
   }, [navigate]);
+
+  useEffect(() => {
+    const scrollAnimElements = document.querySelectorAll(
+      "[data-animate-on-scroll]"
+    );
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting || entry.intersectionRatio > 0) {
+            const targetElement = entry.target;
+            targetElement.classList.add(styles.animate);
+            observer.unobserve(targetElement);
+          }
+        }
+      },
+      {
+        threshold: 0.15,
+      }
+    );
+
+    for (let i = 0; i < scrollAnimElements.length; i++) {
+      observer.observe(scrollAnimElements[i]);
+    }
+
+    return () => {
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.unobserve(scrollAnimElements[i]);
+      }
+    };
+  }, []);
 
   const onLoginHereClick = useCallback(() => {
     navigate("/login");
@@ -36,7 +66,12 @@ const Desktop: FunctionComponent = () => {
       >
         HOME
       </Button>
-      <img className={styles.desktop5Item} alt="" src="/rectangle-12@2x.png" />
+      <img
+        className={styles.desktop5Item}
+        alt=""
+        src="/rectangle-12@2x.png"
+        data-animate-on-scroll
+      />
       <div className={styles.signUp}>{`Sign up `}</div>
       <div className={styles.email}>Email</div>
       <div className={styles.username}>username</div>
