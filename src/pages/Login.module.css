@@ -41,23 +41,24 @@
 .loginChild,
 .loginItem {
   position: absolute;
-  left: 147px;
   cursor: pointer;
 }
 .loginChild {
   text-decoration: none;
-  top: 560px;
+  top: 584px;
+  left: 147px;
   border-radius: 20px;
   background-color: #1920c9;
   width: 242px;
   height: 66px;
 }
 .loginItem {
-  top: 62px;
+  top: 106px;
+  left: 137px;
 }
 .login1 {
   position: absolute;
-  top: 576px;
+  top: 599px;
   left: 224px;
   color: var(--color-white);
   text-align: center;
@@ -72,8 +73,8 @@
 }
 .loginInner {
   position: absolute;
-  top: 167px;
-  left: 668px;
+  top: 51px;
+  left: 687px;
   border-radius: 50%;
   width: 694px;
   height: 698px;
@@ -93,8 +94,8 @@
 }
 .home1 {
   position: absolute;
-  top: 76px;
-  left: 147px;
+  top: 120px;
+  left: 143px;
   color: var(--color-snow);
   text-align: center;
   display: inline-block;
@@ -105,7 +106,7 @@
   width: 100%;
   position: relative;
   background-color: var(--color-white);
-  height: 1024px;
+  height: 831px;
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-11xl);

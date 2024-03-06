@@ -259,3 +259,6 @@
   color: var(--color-gray-100);
   font-family: var(--font-jockey-one);
 }
+.desktop1:active {
+  display: flex;
+}
