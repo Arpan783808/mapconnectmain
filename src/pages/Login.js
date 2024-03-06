@@ -15,10 +15,6 @@ const Login = () => {
     navigate("/");
   }, [navigate]);
 
-  const onRectangleLinkClick = useCallback(() => {
-    navigate("/after-login");
-  }, [navigate]);
-
   const onRectangleButtonClick = useCallback(() => {
     navigate("/desktop-1");
   }, [navigate]);
@@ -46,7 +42,6 @@ const Login = () => {
       <Link
         className="cursor-pointer [text-decoration:none] absolute top-[584px] left-[147px] rounded-[20px] bg-mediumblue w-[242px] h-[66px]"
         to="/after-login"
-        onClick={onRectangleLinkClick}
       />
       <Button
         className="absolute top-[106px] left-[137px] cursor-pointer"
