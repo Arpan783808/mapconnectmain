@@ -1,4 +1,4 @@
-import { FunctionComponent, useCallback } from "react";
+import { useCallback } from "react";
 import {
   Button,
   TextField,
@@ -7,9 +7,8 @@ import {
   IconButton,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import styles from "./Desktop.module.css";
 
-const Desktop: FunctionComponent = () => {
+const Desktop = () => {
   const navigate = useNavigate();
 
   const onFrameButtonClick = useCallback(() => {
@@ -25,9 +24,9 @@ const Desktop: FunctionComponent = () => {
   }, [navigate]);
 
   return (
-    <div className={styles.desktop5}>
+    <div className="w-full relative bg-white h-[1024px] overflow-hidden text-left text-6xl text-black font-abeezee">
       <Button
-        className={styles.desktop5Child}
+        className="absolute top-[67px] left-[30px] mix-blend-normal cursor-pointer"
         disableElevation={true}
         color="primary"
         variant="contained"
@@ -36,18 +35,22 @@ const Desktop: FunctionComponent = () => {
       >
         HOME
       </Button>
-      <img className={styles.desktop5Item} alt="" src="/rectangle-12@2x.png" />
-      <div className={styles.signUp}>{`Sign up `}</div>
-      <div className={styles.email}>Email</div>
-      <div className={styles.username}>username</div>
-      <div className={styles.password}>password</div>
-      <div className={styles.confirmPassword}>confirm password</div>
-      <div className={styles.ifYouAlreadyContainer}>
-        <p className={styles.blankLine}>&nbsp;</p>
-        <p className={styles.blankLine}>{`If you already have an account `}</p>
+      <img
+        className="absolute top-[116px] left-[720px] w-[687px] h-[810px] object-cover"
+        alt=""
+        src="/rectangle-12@2x.png"
+      />
+      <div className="absolute top-[232px] left-[63px] text-11xl">{`Sign up `}</div>
+      <div className="absolute top-[315px] left-[63px]">Email</div>
+      <div className="absolute top-[437px] left-[63px]">username</div>
+      <div className="absolute top-[557px] left-[61px]">password</div>
+      <div className="absolute top-[680px] left-[63px]">confirm password</div>
+      <div className="absolute top-[878px] left-[63px] text-11xl">
+        <p className="m-0">&nbsp;</p>
+        <p className="m-0">{`If you already have an account `}</p>
       </div>
       <Button
-        className={styles.loginHere}
+        className="absolute top-[913px] left-[522px] cursor-pointer"
         disableElevation={true}
         color="primary"
         variant="contained"
@@ -57,36 +60,38 @@ const Desktop: FunctionComponent = () => {
         Login here
       </Button>
       <Button
-        className={styles.desktop5Inner}
+        className="absolute top-[812px] left-[229px] cursor-pointer"
         disableElevation={true}
         color="primary"
         variant="contained"
         sx={{ borderRadius: "0px 0px 0px 0px", width: 242, height: 66 }}
         onClick={onRectangleButtonClick}
       />
-      <div className={styles.register}>REGISTER</div>
+      <div className="absolute top-[828px] left-[283px] text-11xl text-white">
+        REGISTER
+      </div>
       <TextField
-        className={styles.rectangleTextfield}
+        className="[border:none] bg-[transparent] absolute top-[365px] left-[61px]"
         color="primary"
         variant="outlined"
         type="email"
         sx={{ "& .MuiInputBase-root": { height: "54px" }, width: "561px" }}
       />
       <TextField
-        className={styles.desktop5Child1}
+        className="[border:none] bg-[transparent] absolute top-[485px] left-[61px]"
         color="primary"
         variant="outlined"
         sx={{ "& .MuiInputBase-root": { height: "54px" }, width: "561px" }}
       />
       <TextField
-        className={styles.desktop5Child2}
+        className="[border:none] bg-[transparent] absolute top-[612px] left-[61px]"
         color="primary"
         variant="outlined"
         type="password"
         sx={{ "& .MuiInputBase-root": { height: "54px" }, width: "561px" }}
       />
       <TextField
-        className={styles.desktop5Child3}
+        className="[border:none] bg-[transparent] absolute top-[730px] left-[63px]"
         color="primary"
         variant="outlined"
         type="password"
